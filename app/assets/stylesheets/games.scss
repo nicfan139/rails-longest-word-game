@@ -1,0 +1,115 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: white;
+  text-align: center;
+}
+
+/* Lock footer to the bottom */
+.main-body {
+  width: 85vw;
+  min-height: 90vh;
+  padding-bottom: 10vh;
+  margin: auto;
+}
+
+.footer {
+  position: absolute;
+  height: 5vh;
+  width: 100%;
+  padding-top: 20px;
+  margin-top: 30px;
+  background-color: rgba(155,155,155,0.2);
+  text-align: center;
+}
+
+/* Main Title */
+h1 {
+  text-align: center;
+}
+
+/* Letters Grid */
+.letters-section {
+  margin: 50px;
+}
+
+.letters {
+  list-style: none;
+  display: flex;
+  width: 80vw;
+  justify-content: space-around;
+  margin: auto;
+  font-family: Arial;
+  li {
+    color: white;
+    background-color: blue;
+    border: 1px solid rgba(155, 155, 155, 0.5);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+  }
+}
+
+/* User Input */
+
+.form-section {
+  width: 80vw;
+  margin: 50px auto;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.form-input {
+  width: 40vw;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.form-btn {
+  width: 10vw;
+  height: 38px;
+  font-size: 18px;
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+  border: 2px solid green;
+  opacity: 1;
+  transition-property: all;
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+
+.result-box {
+  width: 30vw;
+  background-color: whitesmoke;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.play-again-btn {
+  width: 10vw;
+  margin: 30px auto;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: blue;
+  border-radius: 5px;
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

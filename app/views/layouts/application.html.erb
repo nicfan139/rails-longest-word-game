@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsLongestWordGame</title>
+    <title>Longest Word Game</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
 
   <body>
-    <%= yield %>
+    <div class="main-body">
+      <%= yield %>
+    </div>
+    <div class="footer">
+      This webpage was built with Ruby on Rails <i class="devicon-rails-plain colored"></i> by <a href="http://www.github.com/nicfan139">Nicolas Fan</a>
+    </div>
   </body>
 </html>
