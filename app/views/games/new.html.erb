@@ -1,8 +1,4 @@
-<div>
-  <h1>Welcome to the Longest Word mini-game!</h1>
-</div>
-
-<hr>
+<h1>Welcome to the Longest Word mini-game!</h1>
 
 <% new_grid = Array.new(10) { Array('A'..'Z').sample } %>
 
@@ -14,14 +10,16 @@
   </ul>
 </div>
 
-<hr>
 
-<div class="form-section">
-  <form action="/score" method="POST">
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-  <%= hidden_field_tag :grid, new_grid %>
-    <h2>What is the longest word you can find?</h2>
-    <input class="form-input" type="text" name="longest_word">
-    <input class="form-btn" type="submit">
-  </form>
+<div class="background">
+  <div class="form-section">
+    <form action="/score" method="POST">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :grid, new_grid %>
+      <h2>What is the longest word you can find from above?</h2>
+      <input class="form-input" type="text" name="longest_word">
+      <input class="form-btn" type="submit" value="Guess!">
+    </form>
+  </div>
 </div>
+

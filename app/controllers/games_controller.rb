@@ -37,9 +37,9 @@ class GamesController < ApplicationController
     if attempt == ""
       return "Sorry, you need to enter an answer!"
     elsif word_valid(attempt) == false
-      return "Sorry, #{attempt} is not an English word"
+      return "Sorry, '#{attempt}' is not an English word"
     elsif grid_valid(attempt, grid) == false
-      return "Sorry, #{attempt} is not in the grid"
+      return "Sorry, '#{attempt}' is not in the grid"
     else
       return "Well done!"
     end

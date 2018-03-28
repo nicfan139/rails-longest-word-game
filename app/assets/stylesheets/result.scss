@@ -1,0 +1,43 @@
+.result-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+  background-image: url('https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+}
+
+.result-box {
+  width: 30vw;
+  background-color: whitesmoke;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding: 20px 40px 30px;
+  margin: 30px auto 20px;
+  border-radius: 5px;
+  text-align: center;
+  h1 {
+    margin: 10px auto 20px;
+  }
+}
+
+.play-again-btn {
+  width: 15vw;
+  margin: 30px auto;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: green;
+  border-radius: 5px;
+  text-align: center;
+  a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    opacity: 1;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &:hover {
+    background-color: blue;
+  }
+}
